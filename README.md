@@ -5,6 +5,8 @@ Use them alongside your own debugging, and try and identify when your program ma
 
 You can download this repository (all the files here) either via `git` (if you're comfortable with it), or by clicking the green "Clone or Download" button and downloading a .zip - either way works just fine.
 
+**SUBTLE WARNING**: there are a ton of data files (and they get big), so this is a ~2.2GB download - just be aware!
+
 As a note: these trees are completely implementation-independent. They aren't attached to the code that was used to generate them - they're exactly what you'd get if you drew out the Minimax tree for each board by hand. Just in a better format, and with less grunt work.
 
 ## Where are these files, and what do the names mean?
