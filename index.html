@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Minimax Tree</title>
+    <link href="https://cdn.rawgit.com/lmenezes/json-tree/master/dist/css/jsontree.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/lmenezes/json-tree/master/dist/js/jsontree.min.js"></script>
+  </head>
+  <body>
+    <input id="fileForDisplay" type="file">
+    <button id="go">Load Minimax Tree</button>
+    <div id="tree"></div>
+
+    <script>
+      document.getElementById("go").onclick = function(e) {
+        var file = document.getElementById("fileForDisplay").files[0];
+        if (file) {
+          var reader = new FileReader();
+          reader.readAsText(file, "UTF-8");
+          reader.onload = function (evt) {
+            var json = JSON.parse(evt.target.result);
+            document.getElementById("tree").innerHTML = JSONTree.create(json);
+          }
+          reader.onerror = function (evt) {
+            document.getElementById("tree").innerHTML = "error reading file";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
