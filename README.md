@@ -1,5 +1,7 @@
 # Minimax trees generated on-the-way to gold solutions
 
+**IMPORTANT NOTE**: cloning/downloading this repo will NOT actually download the data - I messed up and set some stuff up wrong. You can find the actual data files at [this link](https://drive.google.com/open?id=1NJDvHtRZEuEA61rwU4RINAZekTNYDc-s), as a .zip download from Google Drive.
+
 ## What should I do with these logs?
 Use them alongside your own debugging, and try and identify when your program makes a decision that doesn't line up with the tree. If you're using a debugger, step through each call to `getMinimaxMove` and `getAlphaBeta` and make sure that the values you're returning and the board states you're considering all line up - if they don't, you've found a bug! If you're not using a debugger, put tons of print statements into your program, and see where your print statements indicate that your program is doing something that doesn't line up with the tree.
 
